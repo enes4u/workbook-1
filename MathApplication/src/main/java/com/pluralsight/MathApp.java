@@ -30,7 +30,11 @@ public class MathApp {
         double sqrt = Math.sqrt(newNumber);
         System.out.println("sqrt is equal to "+ sqrt);
 //5. Find and display the distance between the points (5, 10) and (85, 50)
-        int num1 =5 , num2 =10 , num3 = 85 , num4 = 50;
+        double x1  =5 , y1 =10 , x2 = 85 , y2 = 50;
+        double  deltaX= x2-x1;
+        double deltaY = y2-y1;
+        System.out.println(" Distance is " + deltaX + " and  "+ deltaY);
+
 
 //6. Find and display the absolute (positive) value of a variable after it is set to -3.8
         double number = -3.8;
