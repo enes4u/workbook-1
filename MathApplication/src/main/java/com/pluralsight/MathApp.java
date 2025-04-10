@@ -33,8 +33,9 @@ public class MathApp {
         double x1  =5 , y1 =10 , x2 = 85 , y2 = 50;
         double  deltaX= x2-x1;
         double deltaY = y2-y1;
-        System.out.println(" Distance is " + deltaX + " and  "+ deltaY);
-
+        double distance = Math.sqrt(Math.pow(deltaX, 2) + Math.pow(deltaY, 2));
+        System.out.println("Distance using Pythagorean theorem " + distance);
+        System.out.println(" Distance is  not using Pythagorean theorem" + deltaX + " and  "+ deltaY);
 
 //6. Find and display the absolute (positive) value of a variable after it is set to -3.8
         double number = -3.8;
