@@ -29,6 +29,7 @@ public class MathApp {
         double newNumber = 5.0;
         double sqrt = Math.sqrt(newNumber);
         System.out.println("sqrt is equal to "+ sqrt);
+
 //5. Find and display the distance between the points (5, 10) and (85, 50)
         double x1  =5 , y1 =10 , x2 = 85 , y2 = 50;
         double  deltaX= x2-x1;
@@ -45,5 +46,6 @@ public class MathApp {
 //7. Find and display a random number between 0 and 1
         float randomNumber = 0.45f;
         System.out.println("My Random Number is "+ randomNumber);
+        System.out.println(Math.random());
     }
 }
