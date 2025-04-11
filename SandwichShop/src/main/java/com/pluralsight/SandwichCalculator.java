@@ -13,6 +13,19 @@ public class SandwichCalculator {
 
         int sizeChoice = waiter.nextInt();
 
+        System.out.println(" Would you like your sandwich loaded (Y) yes  or (N) No ?  ");
+        char  loadChoice = waiter.next().toUpperCase().charAt(0);
+        double loadedPrice = 0.0;
+
+        if (loadChoice =='Y'){
+            if (sizeChoice ==1 ){
+                loadedPrice = 1.00;
+
+            }else if (sizeChoice ==2 ){
+                loadedPrice = 1.75;
+            }
+
+        }
 
         //price set based on choice
         double price = 0.0;
@@ -25,20 +38,21 @@ public class SandwichCalculator {
             System.out.println(" Invalid size chosen. Please choose valid size ");
             return;
         }
-
+        double total = (price +loadedPrice);
         // adjust price based on age
         //discount
         System.out.println(" Enter your age: ");
         int age = waiter.nextInt();
         if (age <= 17){
-            price *= 0.9; //10% discount
+            total *= 0.9; //10% discount
 
         }else if ( age >= 65 ){
-            price *= 0.8;
+            total *= 0.8;
 
         }
 
-        System.out.println(" Total cost is: $ " + price);
+
+        System.out.println(" Total cost is: $  " + total);
 
 
         waiter.close();
